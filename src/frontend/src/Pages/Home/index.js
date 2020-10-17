@@ -2,6 +2,7 @@ import React, {useState, useRef} from 'react';
 import JoditEditor from "jodit-react";
 import './styles.css';
 import Menu from '../../Components/Menu'
+import Swal from 'sweetalert2';
 
 
 
@@ -13,7 +14,13 @@ export default function Logon(){
 	
 	const config = {
 		readonly: false // all options from https://xdsoft.net/jodit/doc/
-	}
+  }
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    console.log(content)
+  }
+
   return(
     <div className="Home-container" style={{width: '100%'}}>
       <Menu />
@@ -25,8 +32,10 @@ export default function Logon(){
       value={content}
       config={config}
       tabIndex={1} // tabIndex of textarea
-      onChange={newContent => {}}
+      onBlur={newContent => setContent(newContent)}
       />
+
+      <button  onClick={() => handleSubmit()}>Realizar Post</button>
     </div>
   );
 }

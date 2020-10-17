@@ -1,0 +1,70 @@
+body {
+  margin: 0px;
+}
+@media (min-width: 1025px){
+  li a, .dropbtn {
+    display: inline-block;
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #104040;
+    min-width: 165px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: #FFF;
+    font-size: 15px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #FF8B00;}
+  
+  li a:hover {background-color: #FF8B00;}
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#104040;
+    padding-left: 250px;
+  }
+  
+  li {
+    float: left;
+  }
+  div.Fundo-Logo{
+    padding-left: 480px;
+    padding-top: 20px;
+  }
+  div.Fundo-Logo  img{
+    background-image: #FFF;
+    width:  350px;
+  }
+  
+  li a  {
+    color: #FFF;
+    display: inline-block;
+    text-align: center;
+    padding: 5px 45px;
+    text-decoration: none;
+  }
+  
+  
+}

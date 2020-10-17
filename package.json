@@ -2,10 +2,15 @@
   "name": "preparacao_curso",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/server"
+  },
   "repository": "https://github.com/jonathanGroupRoot/preparacao_curso.git",
   "author": "Jonathan Vinicius Braz Silva <58049154+jonathanGroupRoot@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "mysql": "^2.18.1",
     "mysql2": "^2.2.5",
